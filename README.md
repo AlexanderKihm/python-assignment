@@ -1,3 +1,2 @@
 # python-assignment by Alexander Kihm for the Data Steward course @U Vienna 2024/25
-# By running "calculate_pi_MC.py", a graphical output will be generated illustrating the stochastic computation of pi for various sample sizes. This procedure is also known as Monte Carlo simulation.
-# Sample sizes can easily be adjusted in the .txt-file as integer variables (one per line). If no .txt-file is provided or it is faulty, default sample sizes will be used instead. 
+# By running "calculate_pi_MC.py", a graphical output will be generated illustrating the stochastic computation of pi for various sample sizes. This procedure is also known as Monte Carlo simulation.Sample sizes can easily be adjusted in the .txt-file as integer variables (one per line). If no .txt-file is provided or it is faulty, default sample sizes will be used instead. 
