@@ -64,14 +64,14 @@ fig, axs = plt.subplots(rows, cols, figsize=(fig_width, fig_height))
 axs = axs.flatten()
 
 # Generate plots for different sample sizes
-for i, sample_size in enumerate(sample_sizes):
+for idx, sample_size in enumerate(sample_sizes):
     # Estimate Pi and get points
     pi_estimate, x_inside, y_inside, x_outside, y_outside = estimate_pi(sample_size)
     pi_values.append(pi_estimate)
     sample_sizes_for_plot.append(sample_size)
     
     # Plot the points inside and outside the circle
-    ax = axs[i]  # Select the appropriate subplot for the current sample size
+    ax = axs[idx]  # Select the appropriate subplot for the current sample size
 
     # Plot the points inside and outside the circle
     ax.scatter(x_inside, y_inside, color='blue', s=1, label='Inside Circle')
@@ -103,8 +103,8 @@ ax_pi.legend()
 ax_pi.grid(True)
 
 # Remove extra subplots if any (after the last used subplot)
-for j in range(num_samples + 1, len(axs)):  # +1 because Pi plot is the last subplot
-    fig.delaxes(axs[j])
+for jdx in range(num_samples + 1, len(axs)):  # +1 because Pi plot is the last subplot
+    fig.delaxes(axs[jdx])
 
 # Adjust layout to avoid overlapping and ensure the plot fits nicely
 plt.tight_layout()
